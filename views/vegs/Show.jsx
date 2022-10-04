@@ -12,7 +12,7 @@ class Show extends React.Component {
             <DefaultLayout title={`${veg.name} details`} foodGroup="fruits">
                 <h1>Show Page</h1>
                 <p>
-                    The {veg.name} is {veg.brand}.
+                    The {veg.name} is a product manufactured by {veg.brand}.
                 </p>
                 <p>
                     {veg.costEfficient ? "It is cost efficient" : "It is NOT cost efficient"}
