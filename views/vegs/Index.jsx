@@ -1,4 +1,5 @@
 const React = require('react')
+const vegs = require('../../models/seed')
 const DefaultLayout = require('../layouts/DefaultLayout')
 
 
@@ -16,11 +17,20 @@ class Index extends React.Component {
                             return (
                                 <li key={veg._id}>
                                     The <a href={`/vegs/${veg._id}`}>{veg.name}</a> is {veg.brand}.
+                                    <a href={`/vegs/${veg._id}`}>
+                                    <img src={veg.image}/> 
+                                    </a>
+                                    
+                                    {console.log(veg)}
                                 </li>
                             )
                         })}
                     </ul>
-
+                        <li id = "image">
+                            
+                               
+                            
+                        </li>
                     <nav>
                         <a href="/vegs/new">Create a new a veg</a>
                     </nav>
