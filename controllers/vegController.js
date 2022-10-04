@@ -1,4 +1,5 @@
 const Veg = require('../models/veg')
+const vegs = require('../models/seed')
 
 // ROUTE     GET /vegs   (index)
 const findAllVegs = (req, res) => {  
@@ -30,7 +31,7 @@ const createNewVeg = (req, res) => {
     // Create has two arguments:
     //   1st: the data we want to send
     //   2nd: callback function 
-    Fruit.create(req.body, (err, createdVeg) => {
+  Veg.create(req.body, (err, createdVeg) => {
         if (err) {
             res.status(400).json(err)
         } else {
@@ -43,15 +44,15 @@ const createNewVeg = (req, res) => {
 // ROUTE       GET /vegs/seed      (seed)
 const seedStarterData = (req, res) => {
     // Delete all remaining documents (if there are any)
-    Fruit.deleteMany({}, (err, deletedVeg) => {
+  Veg.deleteMany({}, (err, deletedVeg) => {
         if (err) {
             res.status(400).json(err)
         } else {
             console.log('deleted data.')
-            console.log(seed.vegs)
+            console.log(vegs)
             // Data has been successfully deleted
             // Now use seed data to repopulate the database
-            Fruit.create(seed.vegs, (err, createdVeg) => {
+          Veg.create(vegs, (err, createdVeg) => {
                 if (err) {
                     res.status(400).json(err)
                 } else {
@@ -79,7 +80,9 @@ const showOneVeg = (req, res) => {
 
 // ROUTE      GET /vegs/:id/edit     (edit)
 const showEditView = (req, res) => {
-    Fruit.findById(req.params.id, (err, foundVeg) => {
+  Veg.findById(req.params.id, (err, foundVeg) => {
+    console.log(req.params.id)
+    console.log(foundVeg)
         if (err) {
             res.status(400).json(err)
         } else {

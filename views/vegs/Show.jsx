@@ -19,15 +19,15 @@ class Show extends React.Component {
                 </p>
 
                 <button>
-                    <a href={`/fruits/${veg._id}/edit`}>Edit</a>
+                    <a href={`/vegs/${veg._id}/edit`}>Edit</a>
                 </button>
 
-                <form action={`/fruits/${veg._id}?_method=DELETE`} method="POST">
+                <form action={`/vegs/${veg._id}?_method=DELETE`} method="POST">
                     <input type="submit" value="Delete" />
                 </form>
 
                 <nav>
-                    <a href="/fruits">Back</a>
+                    <a href="/vegs">Back</a>
                 </nav>
             </DefaultLayout>
         )

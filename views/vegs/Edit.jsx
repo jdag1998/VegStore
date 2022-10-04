@@ -7,9 +7,9 @@ class Edit extends React.Component {
         let { veg } = this.props
 
         return (
-            <DefaultLayout title="Edit a Veggie Product" vegGroup="vegs">
+            <DefaultLayout title="Edit a Veggie Product" >
                 <h1>Edit Page</h1>
-                <form action={`/vegs/${veg_id}?_method=PUT`} method="POST">
+                <form action={`/vegs/${veg._id}?_method=PUT`} method="POST">
 
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" name="name" defaultValue={veg.name} />

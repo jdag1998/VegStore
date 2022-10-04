@@ -8,6 +8,7 @@ const Schema = mongoose.Schema
 const vegSchema = new Schema({
     name: { type: String, required: true }, 
     brand: { type: String, required: true }, 
+    image: {type: String},
     costEfficient: Boolean
 })
 
