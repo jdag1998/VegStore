@@ -15,6 +15,13 @@ class Show extends React.Component {
                     The {veg.name} is a product manufactured by {veg.brand}.
                 </p>
                 <p>
+                <img src={veg.image}/> 
+                </p>
+                <p>
+                About this product {veg.descript}
+                {console.log(veg.descript)}
+                </p>
+                <p>
                     {veg.costEfficient ? "It is cost efficient" : "It is NOT cost efficient"}
                 </p>
 

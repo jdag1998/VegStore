@@ -11,7 +11,7 @@ class Index extends React.Component {
 
         return (
             <DefaultLayout title="Veg Store" >
-                    <h1>Fruits Index Page</h1>
+                    <h1>The Veggie Store </h1>
                     <ul id="vegs-index">
                         {veg.map((veg) => {
                             return (
