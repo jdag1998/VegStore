@@ -18,7 +18,7 @@ class Index extends React.Component {
                                 <li key={veg._id}>
                                     The <a href={`/vegs/${veg._id}`}>{veg.name}</a> is {veg.brand}.
                                     <a href={`/vegs/${veg._id}`}>
-                                    <img src={veg.image}/> 
+                                    <img src={veg.image} width="250" height="200" alt="computer hope"/> 
                                     </a>
                                     
                                     {console.log(veg)}
