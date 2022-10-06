@@ -22,8 +22,10 @@ class Index extends React.Component {
                             return (
                                <div class = "index">
                                 <li key={veg._id}>
+                                    <br></br>
                                     The <a href={`/vegs/${veg._id}`}>{veg.name}</a> is {veg.brand}.
                                     <a href={`/vegs/${veg._id}`}>
+                                      <br></br>  
                                         <div class = "images">
                                     <img src={veg.image} width="250" height="200" alt="computer hope"/> 
                                         </div>
