@@ -39,6 +39,10 @@ This project was created as Software Engineer project from PerScholas in order t
 
 I would like to outperformed my current skills at styling 
 I would like to add a shopping cart
+Add a rate scale to categorized each product that can be determined in:
+price:
+taste:
+health:
 
 //License
 
