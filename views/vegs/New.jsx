@@ -28,8 +28,8 @@ class New extends React.Component {
               <input type="text" id="price" name="price" />
               <br></br>
 
-              <label htmlFor="stock">Is the product in stock? :</label>
-              <input type="checkbox" id="stock" name="stock" />
+              <label htmlFor="costEfficient">Is the product in stock? :</label>
+              <input type="checkbox" id="costEfficient" name="costEfficient" />
               <br></br>
 
               <input type="submit" value="Create a New Veggie Product" />

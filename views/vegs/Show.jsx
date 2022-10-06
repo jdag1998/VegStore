@@ -24,7 +24,7 @@ class Show extends React.Component {
   
                 </p>
                 <p>
-                    {veg.stock ? "In Stock" : "Out of Stock"}
+                    {veg.costEfficient ? "In Stock" : "Out of Stock"}
                 </p>
                 </div>
                 <div class = "bottoms">

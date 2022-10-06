@@ -6,7 +6,7 @@ VegStore
 
 It is a Web Store dedicated to Vegans who want to buy vegetarian products from all the brands in the markets
 
-//Stack
+//Technologies Used
 
 The Web store was made using HTML, JavaScript, MERN development
 
@@ -15,6 +15,21 @@ The Web store was made using HTML, JavaScript, MERN development
 This store basically is a store that containts the routes listed below and each of them satisfies each function
 
 ![image](https://user-images.githubusercontent.com/110556973/194354907-8a917631-9fb6-4e6e-96c4-cbd6986e2b5b.png)
+
+//Installation
+
+Install this packages before running the program
+
+npm init -y
+npm i express
+npm i request
+npm i -g nodemon
+npm install express-react-views react react-dom --save
+npm i mongoose
+npm i mongoose dotenv 
+npm i method-override
+
+
 
 //About the Project
 
