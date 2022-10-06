@@ -1,4 +1,34 @@
+*{
+    margin: 10;
+    padding: 4;
+    box-sizing: border-box;
+
+}
+
+
 body{
 
-    background-color: aqua;
+    background-color: aliceblue;
+}
+
+h1{
+    display: grid;
+    place-items: center;
+font-style: italic;
+font-size: 40px;
+}
+
+.images{
+    display: grid;
+    place-items: center;
+}
+
+.index{
+    display: grid;
+    place-items: center;
+
+}
+
+#vegs-index{
+    background-image:url();
 }
