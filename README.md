@@ -38,6 +38,7 @@ This project was created as Software Engineer project from PerScholas in order t
 // Future Updates 
 
 I would like to outperformed my current skills at styling 
+I would like to add a shopping cart
 
 //License
 
