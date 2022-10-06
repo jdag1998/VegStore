@@ -69,3 +69,29 @@ color: greenyellow;
     padding-right: 1rem;
     
 }
+
+.bottoms{
+    display: grid;
+    place-items: center;  
+}
+
+.new-content{
+    display: grid;
+    place-items: center;  
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.Edit-content{
+    display: grid;
+    place-items: center;  
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}

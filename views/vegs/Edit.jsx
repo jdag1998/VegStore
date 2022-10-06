@@ -11,16 +11,27 @@ class Edit extends React.Component {
                 <h1>Edit Page</h1>
                 <form action={`/vegs/${veg._id}?_method=PUT`} method="POST">
 
+                    <div class = "Edit-content">
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" name="name" defaultValue={veg.name} />
-
+                    <br></br>
                     <label htmlFor="brand">Brand:</label>
                     <input type="text" id="brand" name="brand" defaultValue={veg.brand} />
-
-                    <label htmlFor="costEfficient">Is this product Cost Efficient:</label>
-                    <input type="checkbox" id="costEfficient" name="costEfficient" defaultChecked={veg.costEfficient} />
-
+                    <br></br>
+                    <label htmlFor="descript"> Product Description:</label>
+                    <input type="text" id="descript" name="descript" defaultValue={veg.descript} />
+                    <br></br>
+                    <label htmlFor="price">Price:</label>
+                    <input type="text" id="price" name="price" defaultValue={veg.price} />
+                    <br></br>
+                    <label htmlFor="image">image:</label>
+                    <input type="url" id="image" name="image" defaultValue={veg.image} />
+                    <br></br>
+                    <label htmlFor="stock">Is this product in Stock:</label>
+                    <input type="checkbox" id="stock" name="stock" defaultChecked={veg.stock} />
+                    <br></br>
                     <input type="submit" value="Edit Veggie Product"/>
+                    </div>
                 </form>
             </DefaultLayout>
         )

@@ -20,13 +20,14 @@ class Show extends React.Component {
                 </p>
                 <p class = "descript">
                     
-                About this product {veg.descript}
-                {console.log(veg)}
+                About this product: {veg.descript}
+  
                 </p>
                 <p>
-                    {veg.costEfficient ? "It is cost efficient" : "It is NOT cost efficient"}
+                    {veg.stock ? "In Stock" : "Out of Stock"}
                 </p>
                 </div>
+                <div class = "bottoms">
                 <button>
                     <a href={`/vegs/${veg._id}/edit`}>Edit</a>
                 </button>
@@ -38,7 +39,7 @@ class Show extends React.Component {
                 <nav>
                     <a href="/vegs">Back</a>
                 </nav>
-                
+                </div>
             </DefaultLayout>
         )
     }

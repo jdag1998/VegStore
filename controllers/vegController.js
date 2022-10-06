@@ -48,8 +48,7 @@ const seedStarterData = (req, res) => {
         if (err) {
             res.status(400).json(err)
         } else {
-            console.log('deleted data.')
-            console.log(vegs)
+            
             // Data has been successfully deleted
             // Now use seed data to repopulate the database
           Veg.create(vegs, (err, createdVeg) => {
@@ -81,8 +80,7 @@ const showOneVeg = (req, res) => {
 // ROUTE      GET /vegs/:id/edit     (edit)
 const showEditView = (req, res) => {
   Veg.findById(req.params.id, (err, foundVeg) => {
-    console.log(req.params.id)
-    console.log(foundVeg)
+    
         if (err) {
             res.status(400).json(err)
         } else {
