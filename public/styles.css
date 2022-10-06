@@ -2,6 +2,9 @@
     margin: 10;
     padding: 4;
     box-sizing: border-box;
+    /* background-image: url(https://wallpaperaccess.com/full/5095907.jpg);
+    color: white;
+    font-weight: bolder; */
 
 }
 
@@ -9,6 +12,10 @@
 body{
 
     background-color: aliceblue;
+    background-image: url(https://wallpaperaccess.com/full/5095907.jpg);
+    background-repeat: repeat;
+    color: white;
+    font-weight: bolder;
 }
 
 h1{
@@ -16,6 +23,8 @@ h1{
     place-items: center;
 font-style: italic;
 font-size: 40px;
+/* background-color: black; */
+color: greenyellow;
 }
 
 .images{
@@ -29,6 +38,34 @@ font-size: 40px;
 
 }
 
-#vegs-index{
-    background-image:url();
+/* #vegs-index{
+   
+}
+
+.content{
+   
+} */
+
+.index-title{
+    /* background-color: black; */
+    color: greenyellow;
+}
+
+.name-content{
+    display: grid;
+    place-items: center;
+}
+
+.show-content{
+    display: grid;
+    place-items: center;
+}
+
+.descript{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
 }

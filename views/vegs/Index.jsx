@@ -11,7 +11,9 @@ class Index extends React.Component {
 
         return (
             <DefaultLayout title="Veg Store" >
+                    <div class = "index-title">
                     <h1>The Veggie Store </h1>
+                    </div>
                     <p class = "page-description">
                         <h2>You can give the Vegetarian Life a try!</h2>
                     This page is in charge of selling vegetarian products for the consumption of people who are vegetarian or want to give vegetarian food a chance.
@@ -23,7 +25,8 @@ class Index extends React.Component {
                                <div class = "index">
                                 <li key={veg._id}>
                                     <br></br>
-                                    The <a href={`/vegs/${veg._id}`}>{veg.name}</a> is {veg.brand}.
+                                  <a>{veg.name}</a> <br></br>
+                                   <a><b>{veg.price}</b></a>
                                     <a href={`/vegs/${veg._id}`}>
                                       <br></br>  
                                       <br></br> 
